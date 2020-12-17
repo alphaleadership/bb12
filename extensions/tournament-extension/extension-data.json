@@ -1,0 +1,15 @@
+{
+    "name":"Extension de tournois",
+    "id":"tournament-extension",
+    "author":"AlexisL61",
+    "image":"https://img.icons8.com/fluent/100/000000/sword.png",
+    "smallDescription":"Extension pour faire des tournois dans votre serveur",
+    "description":"",
+    "help":{
+    	"active":true,
+    	"field":{
+    		"name":"Tournois",
+    		"value":"{prefix}tournoi: Créer un tournoi"
+    	}
+    }
+}

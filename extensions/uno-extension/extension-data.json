@@ -1,0 +1,9 @@
+{
+    "name":"Jeu de uno",
+    "id":"uno-extension",
+    "author":"AlexisL61",
+    "image":"https://cdn.discordapp.com/attachments/721804584691040383/739170577671127081/UnoLogo.png",
+    "smallDescription":"Extension pour jouer au uno",
+    "description":"",
+    "require":["canvas"]
+}

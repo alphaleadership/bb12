@@ -1,0 +1,61 @@
+<html>
+    <meta charset="UTF-16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./main-style.css">
+    <body>
+        <section id="giveawaySection" class="disappear">
+            <div style="position:absolute">
+                <div style="position:absolute">
+                    <h1 class="title">
+                        Giveaway
+                    </h1>
+                    <h3 class="subtitle" id="giveawaySubtitle">
+                        Chargement
+                    </h3>
+                    <h5>
+                        Récompense
+                    </h5>
+                    <input id="giveaway-reward-input" aria-describedby="token-addon" class="form-control form-control-dark"
+                    placeholder="Un cookie">
+                    <h5>
+                        Date et heure de fin
+                    </h5>
+                    <input type="datetime-local" id="giveaway-date-input" aria-describedby="token-addon" class="form-control form-control-dark"
+                    placeholder="">
+                    <h5>
+                        Nombre de gagnants
+                    </h5>
+                    <input type="number" id="giveaway-winner-number" aria-describedby="token-addon" class="form-control form-control-dark"
+                    placeholder="1">
+                    <h5>
+                        Message de succès d'inscription
+                    </h5>
+                    <textarea type="" id="giveaway-winner-message" aria-describedby="token-addon" col="4" class="form-control form-control-dark"
+                    placeholder="Vous faites maintenant partie du giveaway"></textarea>
+                    <h5>
+                        Contrainte d'inscription
+                    </h5>
+                    <select name="contrainte" onchange="constraint_change()"  id="contrainte">
+                        <option value="no-contraint">Aucune contrainte</option>
+                        <option value="role">Role obligatoire</option>
+                        <option value="guild">L'utilisateur doit faire partie d'un serveur</option>
+                    </select>
+                    <select style="display:none;margin-top:4px;" name="contrainte-value" id="contrainte-value">
+                    </select>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" onclick="createGiveaway()" id="add-bot-token-btn"
+                    class="btn btn-primary button-right-reduce">Suivant</button>
+                <a onclick="closeGiveaway()" class="center text-white">
+                    Retour
+                </a>
+            </div>
+        </section>
+    </body>
+    <script src="./main-script.js"> </script>
+</html>

@@ -1,0 +1,15 @@
+{
+    "name":"Extension de musique",
+    "id":"music-extension",
+    "author":"AlexisL61",
+    "image":"https://img.icons8.com/color/100/000000/musical-notes.png",
+    "smallDescription":"Extension pour jouer de la musique dans votre serveur",
+    "description":"",
+    "help":{
+    	"active":true,
+    	"field":{
+    		"name":"Musique",
+    		"value":"{prefix}play [nom musique]: Joue la musique correspondante\n{prefix}skip: Skip la musique\n{prefix}queue: Regarde la queue\n{prefix}pause: Pause la musique\n{prefix}resume: Joue la musique auparavant mise en pause\n{prefix}loop: Active/désactive la mise en boucle d'une musique\n{prefix}leave: Fait quitter le bot du salon vocal"
+    	}
+    }
+}

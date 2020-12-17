@@ -1,0 +1,16 @@
+{
+    "name":"Extension de météo",
+    "id":"weather-extension",
+    "author":"AlexisL61",
+    "image":"https://img.icons8.com/color/100/000000/partly-cloudy-day.png",
+    "smallDescription":"Extension pour voir la météo d'une ville dans votre serveur",
+    "description":"",
+    "help":{
+    	"active":true,
+    	"field":{
+    		"name":"Météo",
+    		"value":"{prefix}weather <ville>: Permet de voir la météo d'une ville donnée"
+    	}
+    }
+
+}

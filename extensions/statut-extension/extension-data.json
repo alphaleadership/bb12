@@ -1,0 +1,9 @@
+{
+    "name":"Extension pour le status",
+    "id":"statut-extension",
+    "author":"ZayShitee",
+    "image":"https://i.imgur.com/oM9KM5h.png",
+    "smallDescription":"Extension qui vous permet d'ajouter un statut à votre bot comme celui qui est affiché ci dessus",
+    "description":"Cette extension développé par ZayShitee, permet que votre Bot ai un status, vous pouvez en créer 4 qui défileront toutes les 10 secondes. Vous pourrez aussi faire en sorte que le statut affiche le nombre de serveurs ou est présent votre bot, ou le nombre de membres utilisant votre bot"
+
+}

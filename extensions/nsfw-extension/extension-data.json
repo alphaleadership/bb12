@@ -1,0 +1,15 @@
+{
+    "name":"Nsfw Extension",
+    "id":"nsfw-extension",
+    "author":"JustMe",
+    "image":"https://justme.ovh/botson/img/18.png",
+    "smallDescription":"Vous permet d'afficher des images NSFW sur votre serveur.",
+    "description":"",
+    "help":{
+      "active":true,
+    	 "field":{
+    		 "name":"🔞 NSFW",
+    		 "value":"`ass`, `blowjob`, `boobs`, `cowgirl`, `cumshots`, `doggystyle`, `hentai`, `missionary`, `pussy`"
+    	 }
+    }
+  }

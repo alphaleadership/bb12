@@ -1,0 +1,11 @@
+{
+  "name": "Commandes custom",
+  "id": "custom-msg-ext",
+  "author": "Koro~ (馬鹿)#7963",
+  "image": "https://assets.stickpng.com/images/5f45626d62fa090004df3cb0.png",
+  "smallDescription": "Fais une commande, reçois un message !",
+  "description": "Une extension pour customiser tes commandes ! Tu peux définir une commande, puis dès que tu l'executeras, tu recevras un message de ton choix",
+  "help": {
+    "active": false
+  }
+}

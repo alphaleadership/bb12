@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pjs" class="pjs">
+        <div class="ext main centered" id="main">
+            <h1 class="small centered">Ajouter une commande</h1>
+            <label for="name">Nom de la commande (sans le prefix)</label><br/>
+            <input type="text" id="name">
+            <br/><label for="rs">Message envoyé</label><br/>
+            <textarea id="rs"></textarea><br/>
+            <button onclick="addCmd()">On envoie !</button><br/>
+            <a href="cmds.html" class="a-s">Voir les commandes</a>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

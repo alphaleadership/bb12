@@ -1,0 +1,16 @@
+{
+    "name":"Extension de modération",
+    "id":"moderation-extension",
+    "author":"AlexisL61",
+    "image":"https://img.icons8.com/emoji/100/000000/shield-emoji.png",
+    "smallDescription":"Extension pour gérer vos commandes de modération",
+    "description":"",
+    "help":{
+    	"active":true,
+    	"field":{
+    		"name":"Modération",
+    		"value":"{prefix}ban <@utilisateur>: Ban une personne mentionnée\n{prefix}kick <@utilisateur>: Kick une personne mentionnée\n{prefix}mute <@utilisateur>: Mute une personne mentionnée\n{prefix}unmute <@utilisateur>: Dé-mute une personne mentionnée"
+    	}
+    }
+
+}

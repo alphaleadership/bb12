@@ -1,0 +1,79 @@
+<html>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
+   
+    <script id="ipcRendererLoader"></script>
+<body style="margin:0px">
+    <section id="loading-screen" class="center all-screen-size" style="display:none">
+        <div>
+            <div>
+            <img id="loading-uno-img" src="https://cdn.discordapp.com/attachments/721804584691040383/739170577671127081/UnoLogo.png">
+            </div>
+            <div>
+            <img id="loading-uno-loading" src="https://cdn.discordapp.com/attachments/664475681849212940/739193943803297972/icons8-loading-100.png">
+            </div>
+        </div>
+    </section>
+    <section id="main-screen" class="all-screen-size" style="display:block">
+        <h3 class="title" style="width:100%;text-align:center">
+			Uno
+        </h4>
+        <div class="area">
+            <h4>
+                Commandes
+             </h4>
+             <div>
+                 <p>
+                     <b>{prefix}uno</b> Créer une partie
+                 </p>
+             </div>
+             <div>
+                <p>
+                    <b>{prefix}uno leave</b> Quitte une partie de uno
+                </p>
+            </div>
+            <div>
+                <p>
+                    <b>{prefix}uno kick @mention</b> Kick une personne d'une partie de uno
+                </p>
+            </div>
+            <div>
+                <p>
+                    <b>{prefix}uno stop</b> Stoppe toutes les parties de uno en cours
+                </p>
+            </div>
+        </div>
+        <div class="area">
+            <h4>
+                Comment jouer
+             </h4>
+                 Au début de la partie, chaque joueur se voit attribuer un salon privé où il pourra retrouver ses cartes.<br/>
+                 Un salon public est aussi créé où tous le monde peut voir les actions des autres joueurs.<br/>
+                 Pour jouer une carte, envoyez le nombre en dessous de la carte dans votre salon privé à votre tour.<br/>
+                 Pour piocher, écrivez draw dans votre salon privé. <br/>
+                 Pour dire uno, dites uno dans votre salon privé et pour dire contre-uno, dites contre-uno dans n'importe quel salon.<br/> <br/>
+
+                 <b>Vous devez définir un salon "poubelle" avant de pouvoir commencer une partie juste en dessous</b>
+           
+             
+        </div>
+        <div class="area">
+            <h4>
+                Salon poubelle
+             </h4>
+             <p>
+                 Le salon poubelle est un salon permettant au bot d'héberger les images du jeu. Ce salon recevra donc toutes les images de la partie<br/>
+                 Ajoutez ci-dessous, l'id du salon poubelle.
+             </p>
+             <div class="input-group ">
+                <input type="text" class="form-control" id="binChannelSelect" placeholder="Salon poubelle">
+                <div class="input-group-append">
+                  <button class="btn btn-success" onclick="saveConfig()" type="button">Sauvegarder</button>
+                </div>
+              </div>
+        </div>
+    </section>
+</body>
+<script src="./main.js"> </script>
+
+</html>

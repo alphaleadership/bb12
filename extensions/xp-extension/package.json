@@ -1,0 +1,17 @@
+{
+  "name": "xp-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild": "electron-rebuild -f -w better-sqlite3"
+  },
+  "author": "JustMe",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "enmap": "^5.8.2"
+  }
+}

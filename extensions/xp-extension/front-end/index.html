@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="./index.css"/>
+
+</head>
+<body>
+<div class="vertical-nav" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-grey">
+    <div class="media d-flex align-items-center"><img id="imageUser" src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="text-light mb-0" id="nameUser">JustMe</h4>
+        <p class="font-weight-light text-muted mb-0">User.</p>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav flex-column bg-grey mb-0">
+    <li class="nav-item">
+      <p class="nav-link text-light bg-dark font-italic">
+                <i class="fa fa-square mr-3 text-light fa-fw"></i>
+                Accueil
+      </p>
+    </li>
+  </ul>
+</div>
+
+
+<div class="page-content p-5" id="content">
+
+
+  <h2 class="display-4 text-white">XP Extension</h2>
+  <p class="lead text-white mb-0">XP Extension vous permettent d'avoir un système d'xp sur votre bot pour que vous puissiez voir qui est le plus actif sur votre serveur.</p>
+  <p class="lead text-white">Fait par <a href="" class="text-white">
+        <u>JustMe</u></a>
+  </p>
+  <div class="separator"></div>
+  
+  <div class="row text-light">
+    <div class="col-lg-7">
+      <ul class="list-group">
+        <li class="list-group-item lead font-italic mb-0 text-muted">Listes des commandes</li>
+        <li class="list-group-item lead mb-0 text-muted" id="loadCommands">
+        </li>
+      </ul>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

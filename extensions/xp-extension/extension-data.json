@@ -1,0 +1,15 @@
+{   
+    "name":"XP Extension",
+    "id":"xp-extension",
+    "author":"JustMe",
+    "image":"https://justme.ovh/botson/img/level-up.png",
+    "smallDescription":"Vous permet d'activer un système d'xp sur votre bot.",
+    "description":"",
+    "help":{
+      "active":true,
+    	 "field":{
+    		 "name":"🆙 XP System",
+    		 "value":"`rank`, `leaderboard`"
+    	 }
+    }
+  }

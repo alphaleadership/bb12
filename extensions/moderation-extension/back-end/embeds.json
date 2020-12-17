@@ -1,0 +1,210 @@
+{
+    "ban":{
+        "success":{
+            "title":"Utilisateur banni",
+            "description":"{member} s'est pris un coup de ban hammer pour la raison: {reason}"
+        },
+        "error_no_mention":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne à bannir!\nUtilisation: {prefix}ban <@user>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        },
+        "error_bot_no_permission":{
+            "title":"Erreur",
+            "description":"Je n'ai pas la permission de bannir une personne sur ce serveur **ou** je ne peux pas bannir cette personne en particulier."
+        }
+    },
+    "kick":{
+        "success":{
+            "title":"Utilisateur expulsé",
+            "description":"{member} a bien été expulsé pour la raison: {reason}"
+        },
+        "error_no_mention":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne à expulser!\nUtilisation: {prefix}kick <@user>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        },
+        "error_bot_no_permission":{
+            "title":"Erreur",
+            "description":"Je n'ai pas la permission d'expulser une personne sur ce serveur **ou** je ne peux pas expulser cette personne en particulier."
+        }
+    },
+    "mute":{
+        "success":{
+            "title":"Rôle mute ajouté",
+            "description":"{member} a bien reçu le rôle mute pour la raison: {reason}"
+        },
+        "error_no_mention":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne qui doit recevoir le rôle mute!\nUtilisation: {prefix}mute <@user>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        },
+        "error_bot_no_permission":{
+            "title":"Erreur",
+            "description":"Je n'ai pas la permission d'ajouter des rôles sur ce serveur"
+        }
+    },
+    "unmute":{
+        "success":{
+            "title":"Rôle mute enlevé",
+            "description":"{member} a bien été dé-mute pour la raison: {reason}"
+        },
+        "error_no_mention":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne qui doit perdre le rôle mute!\nUtilisation: {prefix}unmute <@user>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        },
+        "error_bot_no_permission":{
+            "title":"Erreur",
+            "description":"Je n'ai pas la permission d'ajouter des rôles sur ce serveur"
+        }
+    },
+    "warn":{
+        "success":{
+            "title":"Warn ajouté",
+            "description":"{member} a bien été warn pour la raison: {reason}"
+        },
+        "error_no_mention":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne qui doit recevoir un warn!\nUtilisation: {prefix}warn <@user>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        }
+    },
+    "warns":{
+        "success":{
+            "title":"Warns de {member}",
+            "description":""
+        },
+        "error_no_mention":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne qui doit montrer ses warns\nUtilisation: {prefix}warns <@user>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        }
+    },
+    "del_warn":{
+        "success":{
+            "title":"Warn effacé",
+            "description":"Le warn n°{number} a bien été effacé pour {member}"
+        },
+        "error_no_mention_no_number":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas mentionné la personne à qui enlever un warn ou vous n'avez pas indiqué le numéro du warn à enlever\nUtilisation: {prefix}del-warn <@user> <numéro de warn>"
+        },
+        "error_number_not_found":{
+            "title":"Erreur",
+            "description":"Ce numéro de warn n'existe pas\nUtilisation: {prefix}del-warn <@user> <numéro de warn>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        }
+    },
+    "bulk_delete":{
+        "success":{
+            "title":"Messages effacés avec succès",
+            "description":"Un total de {messageNumber} messages ont bien été effacés"
+        },
+        "error_no_number":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas ajouté un nombre de messages à effacer!\nUtilisation: {prefix}clear <nombre>"
+        },
+        "error_no_permission":{
+            "title":"Erreur",
+            "description":"Vous n'avez pas la permission d'utiliser cette commande."
+        },
+        "error_bot_no_permission":{
+            "title":"Erreur",
+            "description":"Je n'ai pas la permission d'effacer des messages sur ce serveur"
+        }
+    },
+    "bad_word_found":{
+        "title":"Insulte effacée",
+        "description":"{member}, les insultes ne sont pas acceptées dans ce serveur."
+    },
+    "logs":{
+        "channelDelete":{
+            "title":"#️⃣ Salon effacé",
+            "description":"{member} vient d'effacer le salon: {channelName}",
+            "color":"#FF0B0B"
+        },
+        "channelCreate":{
+            "title":"#️⃣ Salon créé",
+            "description":"{member} vient de créer le salon: {channel}",
+            "color":"#19C60D"
+        },
+        "channelUpdate":{
+            "title":"#️⃣ Salon modifié",
+            "description":"{member} vient de modifier le salon {channel}",
+            "color":"#1A2AFE"
+        }
+        ,
+        "messageDelete":{
+            "title":"📨 Message effacé",
+            "description":"{member} vient de supprimer le message de {messageAuthor}.\n\nContenu du message:\n{messageContent}",
+            "color":"#FF0B0B"
+        },
+        "messageEdit":{
+            "title":"📨 Message édité",
+            "description":"{messageAuthor} vient de modifier son message.\n\nAncien message:\n{messageContent}",
+            "color":"#1A2AFE"
+        },
+        "guildMemberAdd":{
+            "title":"🙋‍♂️ Nouveau membre",
+            "description":"{member} vient d'arriver dans le serveur",
+            "color":"#19C60D"
+        },
+        "guildMemberRemove":{
+            "title":"🙋‍♂️ Un membre en moins",
+            "description":"{member} est parti du serveur",
+            "color":"#FF0B0B"
+        },
+        "roleCreate":{
+            "title":"📊 Nouveau rôle créé",
+            "description":"Nouveau rôle créé: {role}",
+            "color":"#19C60D"
+        },
+        "roleDelete":{
+            "title":"📊 Rôle effacé",
+            "description":"Rôle effacé: {roleName}",
+            "color":"#FF0B0B"
+        },
+        "roleUpdate":{
+            "title":"📊 Rôle mis à jour",
+            "description":"Rôle mis à jour: {role}",
+            "color":"#1A2AFE"
+        },
+        "emojiCreate":{
+            "title":"👍 Nouvel emoji créé",
+            "description":"Nouvel émoji créé: {emojiName}",
+            "color":"#19C60D"
+        },
+        "emojiDelete":{
+            "title":"👍 Emoji effacé",
+            "description":"Emoji effacé: {emojiName}",
+            "color":"#FF0B0B"
+        },
+        "emojiUpdate":{
+            "title":"👍 Emoji mis à jour",
+            "description":"Emoji mis à jour: {emojiName}",
+            "color":"#1A2AFE"
+        }
+    }
+}

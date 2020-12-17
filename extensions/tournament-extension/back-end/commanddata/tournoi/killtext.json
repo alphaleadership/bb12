@@ -1,0 +1,38 @@
+[
+	{
+    "description":"{user} s'est prit une balle dans la tête par {killer}, aie...",
+    "killText": "Tué par {killer} avec une balle dans la tête"
+  },
+	{
+    "description":"{killer} a sorti sa batte de baseball. Inutile de vous dire comment ça s'est terminé pour {user}",
+    "killText": "Tué par {killer} avec un **home run**"
+  },
+	{
+    "description":"{user} s'est fait tranché par le sabre de {killer}",
+    "killText": "Tranché par {killer}"
+  },
+	{
+    "description":"{killer} a des talents dans le lancé de couteau, il nous l'a montré avec {user}",
+    "killText": "Tué par {killer}. C'était quand même un beau lancé de couteau"
+  },
+	{
+    "description":"{killer} a fait trébuché {user} dans les escaliers! Quel dommage!",
+    "killText": "Tué par {killer} dans les escaliers."
+  },
+	{
+    "description":"Les roses sont rouges, les violettes sont bleus\n{user}, s'est fait tuer par {killer} en ce lieu",
+    "killText": "Tué par {killer}"
+  },
+	{
+    "description":"{killer} sort sa boule de bowling, et c'est le **strike** sur {user}!",
+    "killText": "Tué par {killer} avec une boule de bowling"
+  },
+	{
+    "description":"{user} s'est fait écrasé par {killer}. Comme une crêpe!",
+    "killText": "Tué par {killer}, comme une crêpe"
+  },
+  {
+  "description":"{user} s'est fait roulé dessus par {killer}",
+  "killText": "Tué par {killer}, car il t'a roulé dessus!"
+}
+]

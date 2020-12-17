@@ -1,0 +1,178 @@
+<html>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
+   
+    <script id="ipcRendererLoader"></script>
+<body style="margin:0px;overflow:hidden">
+    <section id="back-section">
+        <h2 style="text-align:center;color:white; opacity:0;transition:1s" onclick="returnToMenu()" id="serverNameTitle">Tournois</h2>
+        <div style="height:30vh">
+
+        </div>
+        <h2 style="text-align:center;color:white;" id="">Modération</h2>
+        <select id="serverSelect" onchange="serverOnChange()" class="form-control form-control-dark objectselect">
+            <option id="loading">Chargement</option>
+        </select>
+    </section>
+    <section id="fore-section" style="display:flex">
+        <section id="menuSection">
+            <div class="side-menu">
+                <div class="select" id="side-menu-parameter-commands" onclick="openParameterDiv('commands')">
+                    Commandes
+                </div>
+                <div id="side-menu-parameter-antiinsult" onclick="openParameterDiv('anti-insult')">
+                    Anti-insultes
+                </div>
+                <div id="side-menu-parameter-logs" onclick="openParameterDiv('logs')">
+                    Salon de logs
+                </div>
+            </div>
+        </section>
+        <section id="parameterSection">
+            <section id="parameter-command">
+                <h3>
+                    Commandes
+                </h3>
+                <h5>
+                    Description
+                </h5>
+                <p>
+                    Les commandes de modération permettent de ban, kick ou encore mute une personne donnée. Les commandes de modérations sont utilisables par les personnes ayant les permissions sur votre serveur Discord (exemple: permission de kick pour utiliser la commande kick)
+                </p>
+                <hr class="separator"/>
+                <div>
+                    <div class="activableParameter">
+                        <label>
+                            Ban
+                        </label>
+                        <span>
+                            <label class="switch" style="margin-left:15px">
+                            <input type="checkbox" id="commands-ban-checkbox">
+                            <span class="slider round" onclick="changeData('commands','ban')"></span>
+                        </span>
+                    </div>
+                    <p>
+                        Cette commande permet de bannir une personne de votre serveur.<br/>
+                        Utilisation: {prefix}ban <@utilisateur> &#60;raison&#62;
+                    </p>
+                </div>
+                <hr class="separator"/>
+                <div>
+                    <div class="activableParameter">
+                        <label>
+                            Kick
+                        </label>
+                        <span>
+                            <label class="switch" style="margin-left:15px">
+                            <input type="checkbox" id="commands-kick-checkbox">
+                            <span class="slider round" onclick="changeData('commands','kick')"></span>
+                        </span>
+                    </div>
+                    <p>
+                        Cette commande permet d'expulser une personne de votre serveur.<br/>
+                        Utilisation: {prefix}kick <@utilisateur> &#60;raison&#62;
+                    </p>
+                </div>
+                <hr class="separator"/>
+                <div>
+                    <div class="activableParameter">
+                        <label>
+                            Mute
+                        </label>
+                        <span>
+                            <label class="switch" style="margin-left:15px">
+                            <input type="checkbox" id="commands-mute-checkbox">
+                            <span class="slider round" onclick="changeData('commands','mute')"></span>
+                        </span>
+                    </div>
+                    <p>
+                        Cette commande permet de mute une personne de votre serveur.<br/>
+                        Utilisation: {prefix}mute <@utilisateur> &#60;raison&#62;<br/>
+                        Vous pouvez aussi démute une personne avec la commande suivante:<br/>
+                        Utilisation: {prefix}unmute <@utilisateur> &#60;raison&#62;
+                    </p>
+                </div>
+                <hr class="separator"/>
+                <div>
+                    <div class="activableParameter">
+                        <label>
+                            Warn
+                        </label>
+                        <span>
+                            <label class="switch" style="margin-left:15px">
+                            <input type="checkbox" id="commands-warn-checkbox">
+                            <span class="slider round" onclick="changeData('commands','warn')"></span>
+                        </span>
+                    </div>
+                    <p>
+                        Cette commande permet d'ajouter un warn à une personne<br/>
+                        Utilisation: {prefix}warn <@utilisateur> &#60;raison&#62;<br/>
+                        Vous pouvez voir tous les warns d'une personne avec la commande warns:<br/>
+                        Utilisation: {prefix}warns <@utilisateur><br/>
+                        Vous pouvez effacer un warn d'une personne avec la commande:<br/>
+                        Utilisation: {prefix}del-warn <@utilisateur> &#60;numéro de warn&#62;<br/>
+                    </p>
+                </div>
+                <hr class="separator"/>
+                <div>
+                    <div class="activableParameter">
+                        <label>
+                            Clear
+                        </label>
+                        <span>
+                            <label class="switch" style="margin-left:15px">
+                            <input type="checkbox" id="commands-clear-checkbox">
+                            <span class="slider round" onclick="changeData('commands','clear')"></span>
+                        </span>
+                    </div>
+                    <p>
+                        Cette commande permet de clear un certain nombre de messages passés en paramètre<br/>
+                        Utilisation: {prefix}clear &#60;nombre&#62;<br/>
+                    </p>
+                </div>
+            </section>
+            <section id="parameter-antiinsult">
+                <h3>
+                    Anti-insulte
+                </h3>
+                <h5>
+                    Description
+                </h5>
+                <p>
+                    L'anti-insulte permet de rentrer des mots interdits dans votre serveur. Si un de ces mots est écrit dans un des messages envoyés par l'utilisateur d'un serveur, ce message sera automatiquement effacé en avertissant l'utilisateur.
+                </p>
+                <hr class="separator"/>
+                <div class="inputAndBtnLine">
+                    <input type="text" id="add-anti-insult-word-input" class="form-control form-control-dark" placeholder="Mot à ajouter"> 
+                    <button class="btn-primary btn" id="heberg-bot-btn" onclick="addBadWord()">
+                        Ajouter
+                    </button>
+                </div>
+                <h5>
+                    Mots ajoutés
+                </h5>
+                <div id="words-already-add">
+                    
+                </div>
+            </section>
+            <section id="parameter-logs">
+                <h3>
+                    Salon de logs
+                </h3>
+                <h5>
+                    Description
+                </h5>
+                <p>
+                    Le salon de logs permet de recevoir des messages pour chaque action d'un utilisateur, que ce soit, pour la suppression d'un message, la modification, un kick, un ban et bien plus!
+                </p>
+                <hr class="separator"/>
+                <select id="logChannelSelect" onchange="logChannelOnChange()" class="form-control form-control-dark">
+                    <option id="loading">Chargement</option>
+                </select>
+            </section>
+        </section>
+    </section>
+</body>
+<script src="./main.js"> </script>
+
+</html>

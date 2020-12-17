@@ -1,0 +1,63 @@
+.btn-group{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.area{
+    border-radius:10px;
+    margin-top:10px;
+    width:500px;
+    padding:10px;
+    margin-left:250px;
+    background-color:#71ABCC;
+    text-align:center;
+    margin-bottom: 75px;
+}
+
+#black-blur-background{
+	position:fixed;
+	z-index:2;
+	transition:1s;
+	opacity:0;
+	display:block;
+	background-color:black;
+	width:100vw;
+	height:100vh;
+}
+
+.objectselect {
+    width:80%;
+    margin-left:10%;
+    margin-top:10px;
+    margin-bottom:10px
+}
+
+.message-input{
+    width:100%;
+    height:100px
+}
+
+#save-config-div-result{
+    display:none;
+    text-align: center;
+
+}
+
+body{
+    background-color: #4B535B;
+}
+
+.tags{
+    border-radius:10px;
+    margin-top:10px;
+    width:500px;
+    padding:10px;
+    margin-left:250px;
+    background-color:#71ABCC;
+
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10%;
+}

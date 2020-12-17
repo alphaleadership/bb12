@@ -1,0 +1,14 @@
+{
+  "name": "nsfw-extension",
+  "version": "1.0.0",
+  "description": "See NSFW Images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JustMe",
+  "license": "MIT",
+  "dependencies": {
+    "loveyou-api": "^1.0.8"
+  }
+}

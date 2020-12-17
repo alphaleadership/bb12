@@ -1,0 +1,15 @@
+{
+    "name":"Extension de giveaway",
+    "id":"giveaway-extension",
+    "author":"AlexisL61",
+    "image":"https://img.icons8.com/fluent/100/000000/confetti.png",
+    "smallDescription":"Extension pour faire des giveaways dans votre serveur",
+    "description":"",
+    "help":{
+    	"active":true,
+    	"field":{
+    		"name":"Giveaway",
+    		"value":"{prefix}giveaway: Créer un giveaway"
+    	}
+    }
+}
