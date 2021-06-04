@@ -12,7 +12,7 @@
   "dependencies": {
     "canvas-to-buffer": "^1.1.1",
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "fs-extra": "^9.0.1",
     "opusscript": "0.0.7"
   },
