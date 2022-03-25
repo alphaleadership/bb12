@@ -17,6 +17,6 @@
     "opusscript": "0.0.7"
   },
   "devDependencies": {
-    "electron": "^9.3.5"
+    "electron": "^13.6.6"
   }
 }
